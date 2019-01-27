@@ -4,7 +4,7 @@ module.exports = {
     base:'/',
     dest: './docs/dist',
     head: [
-        ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `./favicon.ico` }]
+        ['link', { rel: 'icon', href: '/favicon.ico' }]
      ],
     themeConfig: {
       nav: [
