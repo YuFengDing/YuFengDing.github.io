@@ -7,6 +7,7 @@ module.exports = {
         ['link', { rel: 'icon', href: '/favicon.ico' }]
      ],
     themeConfig: {
+      sidebarDepth:0,
       nav: [
         { text: '编程', link: '/code/' },
         { text: '生活', link: '/life/' },
@@ -14,12 +15,12 @@ module.exports = {
       ],
       sidebar: {
           '/code/':[
-              '',
               'firstcode',
+              'git'
           ],
           '/life/':[
             'godfather'
-          ],
+          ]
       }
     }
   }
