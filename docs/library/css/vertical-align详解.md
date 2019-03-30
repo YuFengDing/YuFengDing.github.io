@@ -1,0 +1,3 @@
+# vertical-align 详解
+很多人最常遇到的一种情况就是给某一个行内元素写了vertical-align:middle,却没有垂直居中。
+vertical-align使用的第一个注意点就是他是行内元素的此属性相互作用的结果，即如果一个块内有多个span你想让他们垂直居中，那你就需要给所有span加上vertical-align,给单独一个加上是没有用的。(未完待续)
