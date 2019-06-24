@@ -1,4 +1,4 @@
-## 二维数组中是否存在某一整数
+# 二维数组中是否存在某一整数
 题目描述:数组每一行递增，同一行上每一列递增
 ```
 function dyadicArrayFindNumbers(arr, target) {

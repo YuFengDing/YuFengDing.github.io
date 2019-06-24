@@ -1,4 +1,4 @@
-## 封装nodejs 连接mysql并执行sql语句
+# 封装nodejs 连接mysql并执行sql语句
 ```
 const mysql = require('mysql');
 const config = require('./config');
