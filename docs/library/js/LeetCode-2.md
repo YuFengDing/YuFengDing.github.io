@@ -1,5 +1,6 @@
 # add two numbers
-leetCode 第二题 第一次做时的解法
+leetCode 第二题 第一次做时的解法,挺垃圾的解法后面会更新。
+![leetCode-2](/addTwoNumbers.png)
 ```
 /**
  * Definition for singly-linked list.
