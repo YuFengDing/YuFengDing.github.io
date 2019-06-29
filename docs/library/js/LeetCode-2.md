@@ -48,3 +48,41 @@ var addTwoNumbers = function(l1, l2) {
     return head
 };
 ```
+直接用链表来接(需要对链表以及js中的引用类型有深刻理解)
+```
+var addTwoNumbers = function(l1, l2) {
+let node1 = l1;
+let node2 = l2;
+// 进位 默认0
+let temp = 0;
+let initNode = new ListNode();
+let parentNode = null;
+initNode.val = (node1.val + node2.val + temp) % 10;
+temp = Math.floor((node1.val + node2.val + temp) / 10);
+if(node1.next !== null || node2.next !== null || (temp > 0)){
+    initNode.next = new ListNode();
+    if(temp > 0){
+       initNode.next = new ListNode(temp) 
+    }
+}
+parentNode = initNode.next;
+while (node1 && (node1.next !== null) || node2 && (node2.next !== null)) {
+  node1 = node1 && node1.next;
+  node2 = node2 && node2.next;
+  const node1Val = (node1 === null ? 0 : node1.val);
+  const node2Val = (node2 === null ? 0 : node2.val);
+  parentNode.val = (node1Val + node2Val + temp) % 10;
+  temp = Math.floor((node1Val + node2Val + temp) / 10);
+  if((node1 && (node1.next !== null)) || (node2 && (node2.next !== null)) ||(temp > 0)){
+     parentNode.next = new ListNode();
+      if(temp > 0 ){
+        parentNode.next = new ListNode(temp);
+      }
+  }
+  parentNode = parentNode.next;
+}
+return initNode;
+};
+```
+跑个分
+![leetcode-2](/addTwoNumbers2.png)
