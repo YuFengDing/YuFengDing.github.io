@@ -1,3 +1,6 @@
+# Longest Substring Without Repeating Characters
+leetcode 第三题
+```
 const longestSubString = (string) =>{
     let stringPool = string.split('');
     let longestStringList = [];
@@ -17,3 +20,4 @@ const longestSubString = (string) =>{
     }
     return longestStringList.length;
 }
+```

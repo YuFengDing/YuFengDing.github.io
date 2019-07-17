@@ -2,7 +2,7 @@
 home: true 
 heroImage: /timg.jpg
 actionText: Go ahead →
-actionLink: /css/
+actionLink: /library/css/
 features:
 - title: CSS
   details: 前端黑魔法。
