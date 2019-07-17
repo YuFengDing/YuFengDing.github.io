@@ -2,7 +2,7 @@
 ```
 const mysql = require('mysql');
 const config = require('./config');
-function getConn() {
+function getConn(config) {
   return  mysql.createConnection({
     host: config.host,
     user: config.dbUser,
@@ -11,7 +11,7 @@ function getConn() {
   });
 }
 async function execSql(sql) {
-  const db = getConn();
+  const db = getConn(config);
   return new Promise(function (resolve, reject) {
     db.query(sql, (err, res = []) => {
       if (err) {
