@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Longest Substring Without Repeating Characters | dyf的个人网站👏</title>
+    <meta name="description" content="技术 | 生活 | 有趣">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.9ea11994.css" as="style"><link rel="preload" href="/assets/js/app.2b671c47.js" as="script"><link rel="preload" href="/assets/js/21.9a839435.js" as="script"><link rel="prefetch" href="/assets/js/10.fc58b3d4.js"><link rel="prefetch" href="/assets/js/11.cfc51744.js"><link rel="prefetch" href="/assets/js/12.324a99b8.js"><link rel="prefetch" href="/assets/js/13.7d9126a1.js"><link rel="prefetch" href="/assets/js/14.d609be22.js"><link rel="prefetch" href="/assets/js/15.c747031d.js"><link rel="prefetch" href="/assets/js/16.2421c6d0.js"><link rel="prefetch" href="/assets/js/17.52e6b96f.js"><link rel="prefetch" href="/assets/js/18.b06c49e6.js"><link rel="prefetch" href="/assets/js/19.0e18f6c4.js"><link rel="prefetch" href="/assets/js/2.e5f43561.js"><link rel="prefetch" href="/assets/js/20.d414f315.js"><link rel="prefetch" href="/assets/js/22.1326065b.js"><link rel="prefetch" href="/assets/js/23.7b6c158f.js"><link rel="prefetch" href="/assets/js/24.ae758624.js"><link rel="prefetch" href="/assets/js/25.66b610f3.js"><link rel="prefetch" href="/assets/js/26.2a25ca72.js"><link rel="prefetch" href="/assets/js/27.c2b23583.js"><link rel="prefetch" href="/assets/js/28.e07d419b.js"><link rel="prefetch" href="/assets/js/29.0d1c60c9.js"><link rel="prefetch" href="/assets/js/3.3c2fb903.js"><link rel="prefetch" href="/assets/js/30.35d07276.js"><link rel="prefetch" href="/assets/js/31.8f6973e1.js"><link rel="prefetch" href="/assets/js/4.b1b013a3.js"><link rel="prefetch" href="/assets/js/5.427b1494.js"><link rel="prefetch" href="/assets/js/6.4f7b4b69.js"><link rel="prefetch" href="/assets/js/7.c345dcd3.js"><link rel="prefetch" href="/assets/js/8.11057a30.js"><link rel="prefetch" href="/assets/js/9.5ced6d1b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9ea11994.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">dyf的个人网站👏</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/library/css/" class="nav-link">CSS</a></div><div class="nav-item"><a href="/library/js/" class="nav-link">Javascript</a></div><div class="nav-item"><a href="/library/leetcode/" class="nav-link router-link-active">leetcode</a></div><div class="nav-item"><a href="/library/server/" class="nav-link">服务端</a></div><div class="nav-item"><a href="/library/utils/" class="nav-link">工具集</a></div><div class="nav-item"><a href="/library/interesting/" class="nav-link">因吹斯汀</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/library/css/" class="nav-link">CSS</a></div><div class="nav-item"><a href="/library/js/" class="nav-link">Javascript</a></div><div class="nav-item"><a href="/library/leetcode/" class="nav-link router-link-active">leetcode</a></div><div class="nav-item"><a href="/library/server/" class="nav-link">服务端</a></div><div class="nav-item"><a href="/library/utils/" class="nav-link">工具集</a></div><div class="nav-item"><a href="/library/interesting/" class="nav-link">因吹斯汀</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>leetcode</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/library/leetcode/LeetCode-2.html" class="sidebar-link">add two numbers</a></li><li><a href="/library/leetcode/LeetCode-3.html" class="active sidebar-link">Longest Substring Without Repeating Characters</a></li><li><a href="/library/leetcode/剑指offer-js版本.html" class="sidebar-link">二维数组中是否存在某一整数</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="longest-substring-without-repeating-characters"><a href="#longest-substring-without-repeating-characters" aria-hidden="true" class="header-anchor">#</a> Longest Substring Without Repeating Characters</h1> <p>leetcode 第三题</p> <div class="language- extra-class"><pre class="language-text"><code>const longestSubString = (string) =&gt;{
+    let stringPool = string.split('');
+    let longestStringList = [];
+    for(let i = 0;i &lt; stringPool.length;i++){
+        let tempList = [];
+        tempList.push(stringPool[i]);
+        for(let j = i+1;j &lt; stringPool.length;j++){
+            const position = tempList.indexOf(stringPool[j]);
+            if(position &gt; -1){
+                i
+                break;
+            }else {
+                tempList.push(stringPool[j])
+            }
+        }
+        longestStringList = longestStringList.length &gt; tempList.length ? longestStringList:tempList;
+    }
+    return longestStringList.length;
+}
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/library/leetcode/LeetCode-2.html" class="prev">
+          add two numbers
+        </a></span> <span class="next"><a href="/library/leetcode/剑指offer-js版本.html">
+          二维数组中是否存在某一整数
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.2b671c47.js" defer></script><script src="/assets/js/21.9a839435.js" defer></script>
+  </body>
+</html>

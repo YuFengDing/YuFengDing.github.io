@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>add two numbers | dyf的个人网站👏</title>
+    <meta name="description" content="技术 | 生活 | 有趣">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.9ea11994.css" as="style"><link rel="preload" href="/assets/js/app.2b671c47.js" as="script"><link rel="preload" href="/assets/js/20.d414f315.js" as="script"><link rel="prefetch" href="/assets/js/10.fc58b3d4.js"><link rel="prefetch" href="/assets/js/11.cfc51744.js"><link rel="prefetch" href="/assets/js/12.324a99b8.js"><link rel="prefetch" href="/assets/js/13.7d9126a1.js"><link rel="prefetch" href="/assets/js/14.d609be22.js"><link rel="prefetch" href="/assets/js/15.c747031d.js"><link rel="prefetch" href="/assets/js/16.2421c6d0.js"><link rel="prefetch" href="/assets/js/17.52e6b96f.js"><link rel="prefetch" href="/assets/js/18.b06c49e6.js"><link rel="prefetch" href="/assets/js/19.0e18f6c4.js"><link rel="prefetch" href="/assets/js/2.e5f43561.js"><link rel="prefetch" href="/assets/js/21.9a839435.js"><link rel="prefetch" href="/assets/js/22.1326065b.js"><link rel="prefetch" href="/assets/js/23.7b6c158f.js"><link rel="prefetch" href="/assets/js/24.ae758624.js"><link rel="prefetch" href="/assets/js/25.66b610f3.js"><link rel="prefetch" href="/assets/js/26.2a25ca72.js"><link rel="prefetch" href="/assets/js/27.c2b23583.js"><link rel="prefetch" href="/assets/js/28.e07d419b.js"><link rel="prefetch" href="/assets/js/29.0d1c60c9.js"><link rel="prefetch" href="/assets/js/3.3c2fb903.js"><link rel="prefetch" href="/assets/js/30.35d07276.js"><link rel="prefetch" href="/assets/js/31.8f6973e1.js"><link rel="prefetch" href="/assets/js/4.b1b013a3.js"><link rel="prefetch" href="/assets/js/5.427b1494.js"><link rel="prefetch" href="/assets/js/6.4f7b4b69.js"><link rel="prefetch" href="/assets/js/7.c345dcd3.js"><link rel="prefetch" href="/assets/js/8.11057a30.js"><link rel="prefetch" href="/assets/js/9.5ced6d1b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9ea11994.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">dyf的个人网站👏</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/library/css/" class="nav-link">CSS</a></div><div class="nav-item"><a href="/library/js/" class="nav-link">Javascript</a></div><div class="nav-item"><a href="/library/leetcode/" class="nav-link router-link-active">leetcode</a></div><div class="nav-item"><a href="/library/server/" class="nav-link">服务端</a></div><div class="nav-item"><a href="/library/utils/" class="nav-link">工具集</a></div><div class="nav-item"><a href="/library/interesting/" class="nav-link">因吹斯汀</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/library/css/" class="nav-link">CSS</a></div><div class="nav-item"><a href="/library/js/" class="nav-link">Javascript</a></div><div class="nav-item"><a href="/library/leetcode/" class="nav-link router-link-active">leetcode</a></div><div class="nav-item"><a href="/library/server/" class="nav-link">服务端</a></div><div class="nav-item"><a href="/library/utils/" class="nav-link">工具集</a></div><div class="nav-item"><a href="/library/interesting/" class="nav-link">因吹斯汀</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>leetcode</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/library/leetcode/LeetCode-2.html" class="active sidebar-link">add two numbers</a></li><li><a href="/library/leetcode/LeetCode-3.html" class="sidebar-link">Longest Substring Without Repeating Characters</a></li><li><a href="/library/leetcode/剑指offer-js版本.html" class="sidebar-link">二维数组中是否存在某一整数</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="add-two-numbers"><a href="#add-two-numbers" aria-hidden="true" class="header-anchor">#</a> add two numbers</h1> <p>leetCode 第二题 第一次做时的解法,挺垃圾的解法后面会更新。
+<img src="/addTwoNumbers.png" alt="leetCode-2"></p> <div class="language- extra-class"><pre class="language-text"><code>/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */
+/**
+ * @param {ListNode} l1
+ * @param {ListNode} l2
+ * @return {ListNode}
+ */
+var addTwoNumbers = function(l1, l2) {
+    let list1 = [],list2 = [],list3 = [];
+    list1.push(l1.val)
+    while(l1.next !== null){
+        l1 = l1.next;
+        list1.push(l1.val)
+    }
+    list2.push(l2.val)
+    while(l2.next !== null){
+        l2 = l2.next;
+        list2.push(l2.val)
+    }
+    const l = list1.length &gt;= list2.length ? list1.length:list2.length;
+    let temp = 0;
+    for(let i = 0;i&lt;l;i++){
+        const ls1 = list1[i] === undefined?0:list1[i];
+        const ls2 = list2[i] === undefined?0:list2[i];
+        list3[i] = ((ls1 + ls2)%10 + temp) % 10;
+        temp = Math.floor((ls1 + ls2 + temp) / 10);
+    }
+    if(temp &gt; 0){
+       list3.push(temp)
+    };
+    let node = null;
+    let head = new ListNode(list3[0]);
+    let pNode = head;
+    for(let j = 1;j &lt; list3.length;j++){
+        node = new ListNode(list3[j]);
+        pNode.next = node;
+        pNode = node;
+    }
+    return head
+};
+</code></pre></div><p>直接用链表来接(需要对链表以及js中的引用类型有深刻理解)</p> <div class="language- extra-class"><pre class="language-text"><code>var addTwoNumbers = function(l1, l2) {
+let node1 = l1;
+let node2 = l2;
+// 进位 默认0
+let temp = 0;
+let initNode = new ListNode();
+let parentNode = null;
+initNode.val = (node1.val + node2.val + temp) % 10;
+temp = Math.floor((node1.val + node2.val + temp) / 10);
+if(node1.next !== null || node2.next !== null || (temp &gt; 0)){
+    initNode.next = new ListNode();
+    if(temp &gt; 0){
+       initNode.next = new ListNode(temp) 
+    }
+}
+parentNode = initNode.next;
+while (node1 &amp;&amp; (node1.next !== null) || node2 &amp;&amp; (node2.next !== null)) {
+  node1 = node1 &amp;&amp; node1.next;
+  node2 = node2 &amp;&amp; node2.next;
+  const node1Val = (node1 === null ? 0 : node1.val);
+  const node2Val = (node2 === null ? 0 : node2.val);
+  parentNode.val = (node1Val + node2Val + temp) % 10;
+  temp = Math.floor((node1Val + node2Val + temp) / 10);
+  if((node1 &amp;&amp; (node1.next !== null)) || (node2 &amp;&amp; (node2.next !== null)) ||(temp &gt; 0)){
+     parentNode.next = new ListNode();
+      if(temp &gt; 0 ){
+        parentNode.next = new ListNode(temp);
+      }
+  }
+  parentNode = parentNode.next;
+}
+return initNode;
+};
+</code></pre></div><p>跑个分
+<img src="/addTwoNumbers2.png" alt="leetcode-2"></p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/library/leetcode/LeetCode-3.html">
+          Longest Substring Without Repeating Characters
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.2b671c47.js" defer></script><script src="/assets/js/20.d414f315.js" defer></script>
+  </body>
+</html>
