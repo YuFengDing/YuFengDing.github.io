@@ -1,7 +1,7 @@
 {
   "scripts": {
     "serve": "npm run buid:catelog && vuepress dev docs",
-    "buid:catelog":"node ./scripts/renderCatalog.js",
+    "buid:catelog": "node ./scripts/renderCatalog.js",
     "build": "npm run buid:catelog && vuepress build docs",
     "deploy": "npm run buid:catelog && bash deploy.sh"
   },
